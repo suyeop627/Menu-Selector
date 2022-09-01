@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--head-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="KimSuyeop">
+<meta name="date" content="">
+<link rel="shortcut icon" href="favicon.png">
+<title></title>
+<style>
+
+
+</style>
+</head>
+
+<!--body-->
+<body>
+<fieldset>
+<h1 id="result" > 오늘 먹을 거 </h1>
+<button onclick = "select()">시작 </button>
+</fieldset>
+</body>
+<!--script-->
+<script>
+
+var menu = [ "분식", "횟집", "모밀", "햄버거", "밥버거", "중국집", "갈비탕", "편의점"]
+
+function select(){
+
+    var dice = parseInt((Math.random() * 8));  
+
+    var Selected =  menu[dice]
+
+
+document.getElementById("result").innerHTML= Selected
+}
+
+</script>
+</html>
